@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/w3css/3/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<body>
+
+<!-- Navigation -->
+<nav class="w3-bar w3-black">
+  <a href="#home" class="w3-button w3-bar-item">Home</a>
+  <a href="#band" class="w3-button w3-bar-item">Creative</a>
+  <a href="#tour" class="w3-button w3-bar-item">Blogs</a>
+  <a href="#contact" class="w3-button w3-bar-item">About</a>
+</nav>
+
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="img_band_la.jpg"
+  style="width:100%">
+  <img class="mySlides" src="img_band_ny.jpg"
+  style="width:100%">
+  <img class="mySlides" src="img_band_chicago.jpg"
+  style="width:100%">
+</section>
+
+<!-- Band Description -->
+<section class="w3-container w3-center w3-content" style="max-width:600px">
+  <h2 class="w3-wide">Blogs</h2>
+  <p class="w3-opacity"><i>Creative Kidsv Blogs!</i></p>
+  <p class="w3-justify">Creative Kidsv creative sample contents: 
+<b>Problem-solving:</b> To get ahead in a competitive world, kids will need to be able to think critically and come up with smart solutions to complex dilemmas.
+<b>Creativity:</b> Encourage kids to think outside the box and come up with new ideas.
+<b>Communication:</b> Teach kids how to communicate effectively with others.
+<b>Collaboration:</b> Teach kids how to work together with others to achieve common goals.
+<b>Digital literacy:</b> Teach kids how to use technology effectively and safely.
+<b>Global awareness:</b> Teach kids about different cultures and the world around them.</p>
+</section>
+
+<!-- Band Members -->
+<section class="w3-row-padding w3-center w3-light-grey">
+  <article class="w3-third">
+    <p>AAA</p>
+    <img src="img_bandmember.jpg" alt="Random Name" style="width:100%">
+    <p>AAA is the smartest.</p>
+  </article>
+  <article class="w3-third">
+    <p>BBB</p>
+    <img src="img_bandmember.jpg" alt="Random Name" style="width:100%">
+    <p>BBB is the prettiest.</p>
+  </article>
+  <article class="w3-third">
+    <p>CCC</p>
+    <img src="img_bandmember.jpg" alt="Random Name" style="width:100%">
+    <p>CCC is the funniest.</p>
+  </article>
+</section>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <a href="#"><i class="fa fa-facebook-official"></i></a>
+  <a href="#"><i class="fa fa-pinterest-p"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-flickr"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <p class="w3-medium">
+  Created by <a href="#" target="_blank">Kidsv@2023</a>
+  </p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+</body>
+</html>
+
