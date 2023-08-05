@@ -1,2 +1,2 @@
 # kidsv.github.io
-Welcome to KidsV!!
+Welcome to Kidsv!!
